@@ -5,5 +5,8 @@
             coordsEl.textContent = `${position.coords.latitude}, ${position.coords.longitude}`
             coordsEl.parentElement.classList.remove('invisible');
         });
+    } else {
+        // Fallback or error handling
+        console.log('Geolocation is not supported');
     }
 })();
